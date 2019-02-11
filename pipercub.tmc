@@ -1,0 +1,31 @@
+﻿<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ ( 0.3191 0.9753 -1.5524 0.23 ) ( 0.3191 -0.9753 -1.5524 0.23 ) (-4.8054 0.0 -0.4779 0.0831 ) ]>
+        <[string8][DisplayName][Piper PA-11 Cub Special]>
+		<[string8][DescriptionTextEN][The Piper PA-11 Cub Special is a later production, two-place variant of the Piper J-3 Cub light propeller-driven aircraft, manufactured by Piper Aircraft. For AeroflyFS made by Krzysztof Kaniewski. 3D model by Adrian Fernandez Gomez (please visit www.alcala-sim.com).]>
+		<[float64][WingSpan][10.9]>
+		<[float64][Mass][400]>
+		<[float64][MaximumSpeed][53.0]>
+		<[float64][MinimumSpeed][17.0]>
+        <[float64][ApproachSpeed][36.1]>
+        <[float64][CruiseSpeed]  [45.6]>
+		<[tmvector2d][NormalSpeedRange][ 17.0 39.0 ]>
+		<[tmvector2d][CautionSpeedRange][ 39.0 53.0 ]>
+		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
+        <[float64][MaximumAltitude][4880.0]>
+        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][QSpan][8.74]>
+        <[float64][QMass][400.0]>
+        <[float64][QSpeed][53.0]>
+        <[float64][QPower][67000.0]>
+        <[float64][QThrust][0.0]>
+        <[float64][QRange][567000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][1541]>
+        <[float64][QVirgin][1947]>
+        <[bool][Airplane][true]>
+		<[bool][Flaps][false]>
+		<[string8][Pilot][pilot_peter]>	
+    >
+>
