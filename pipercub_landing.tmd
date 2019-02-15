@@ -1,0 +1,25 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][62]
+                <[float64][Value][0.211813304123683]>
+            >
+            <[servoclassic][ThrottleLever][63]
+                <[float64][Position][0.211813304123683]>
+            >
+            <[multibody_joint][PropellerJoint][43]
+                <[float64][Velocity][164.0]>
+            >
+
+            // trim
+            <[input_default][PitchTrim][95]
+                <[float64][Value][-0.5]>
+            >
+
+
+        >
+    >
+>
+
