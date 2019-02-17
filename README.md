@@ -6,3 +6,6 @@ Original 3D design and original sound files: Adrian Fernandez Gomez (please visi
 Original Aerofly FS 1 aircraft and Aerofly FS 2 adaptation: Krzysztof Kaniewski krzysk (at) wp.pl
 
 Aerofly FS 2 optimizations, flight physics, performance: Jan-Hendrik Hanuschik (IPACS)
+
+Tip:
+To start the engine put the hand in propeller blade and move the propeller
