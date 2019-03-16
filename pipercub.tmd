@@ -1187,7 +1187,7 @@
             <[rigidbodygraphics][LeftWing][]
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
-                <[string8][GeometryList][ leftwing leftwingparts leftwingparts2 leftwingstruts ]>
+                <[string8][GeometryList][ leftwing leftwingparts leftwingparts2 leftwingstruts pitot ]>
             >
             <[rigidbodygraphics][RightWing][]
                 <[uint32][PositionID][RightWing.R]>
