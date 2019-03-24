@@ -827,11 +827,20 @@
                 <[float64][P2][0.0]>
                 <[float64][P3][0.0]>
                 <[float64][Position][1.0]>
-            >
+            >		
             <[output_free][FuelSelectorOutput][]
                 <[string8][Input][FuelSelector.Output]>
             >
 
+            // fuel level	
+            <[integral][FuelQuantity][]
+                <[string8][Input][-0.001]>
+                <[float64][Value][0.8]>
+            >
+            <[output_free][FuelQuantityOutput][]
+                <[uint32][Input][FuelQuantity.Output]>
+            >
+			
             // fuel system end
 
 
@@ -1207,18 +1216,30 @@
                 <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][ 1.718 -0.0058 -0.3018 ]>
             >
-            <[graphics_propeller_blade][PropellerBlade][]
+            <[graphics_propeller_blade][PropellerBlade0][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][GeometryList][ propellerblade propellerblade01 ]>
+                <[string8][GeometryList][ propellerblade ]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
-                <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][ 1.718 -0.0058 -0.3018 ]>
                 <[float64][Radius][1.0]>
                 <[string8][InputPitch][0.0]>
             >
+            <[graphics_propeller_blade][PropellerBlade1][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][GeometryList][ propellerblade01 ]>
+                <[uint32][AngleID][Propeller.RotationAngle]>
+                <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
+                <[uint32][DamageID][Propeller.Damaged]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Pivot][ 1.718 -0.0058 -0.3018 ]>
+                <[float64][Radius][1.0]>
+                <[string8][InputPitch][0.0]>
+            >			
             <[propellergraphics][Propeller][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
@@ -1273,7 +1294,7 @@
             >
             <[graphics_mapping][obj1Mapping_31][]
                 <[string8][Input][obj1Input_2.Output]>
-                <[tmvector2d][Map][ (-1.0 0.036000) (1.0 0.0) ]>
+                <[tmvector2d][Map][ (-1.0 0.036) (1.0 0.0) ]>
             >
             <[graphics_translation][obj1Moving_31][]
                 <[string8][Input][obj1Mapping_31.Output]>
@@ -1762,6 +1783,15 @@
                 <[tmvector3d][Pivot][ 0.608 -0.2224 -0.1728 ]>
                 <[float64][AngleMax][1.6451]>
             >
+            <[movinggraphics][FuelIndicator][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][GeometryList][ fuelindicator ]>
+                <[uint32][AngleID][FuelQuantity.Output]>
+                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
+                <[float64][Pos0][-0.000057]>
+                <[float64][Pos1][0.000057]>
+            >			
 
     // Handles
     // --------------------------------
