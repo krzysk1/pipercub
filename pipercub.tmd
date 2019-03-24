@@ -832,9 +832,9 @@
                 <[string8][Input][FuelSelector.Output]>
             >
 
-            // fuel level	
+            // fuel level
             <[integral][FuelQuantity][]
-                <[string8][Input][-0.001]>
+                <[string8][Input][-0.000072]> // endurance 3.8 h
                 <[float64][Value][0.8]>
             >
             <[output_free][FuelQuantityOutput][]
