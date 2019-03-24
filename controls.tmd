@@ -468,11 +468,11 @@
             >
             <[control_translation][PropellerShift][]
                 <[string8][Input][PropellerSpinning.Output]>
-                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
             >
             <[control_rotation][PropellerTransform][]
                 <[string8][Input][PropellerRotationAngle.Output]>
-                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][ 1.78904 0.0 -0.311608 ]>
                 <[string8][InputTransform][PropellerShift.Output]>
             >
