@@ -19,12 +19,12 @@
                 <[float64][Length][0.01]>
             >
 
-            <[control_input][PrimierInput][]
-                <[uint32][InputID][PrimerInput.Output]>
+            <[control_input][PrimerLever][]
+                <[uint32][InputID][PrimerLever.Output]>
                 <[string8][Scaling][0.038]>
             >
-            <[control_translation][PrimerTranslation][]
-                <[string8][Input][PrimierInput.Output]>
+            <[control_translation][PrimerLeverTranslation][]
+                <[string8][Input][PrimerLever.Output]>
                 <[vector3_float64][Axis][ 1.0 0.0 0.0 ]>
             >
             <[control_cylinder][Primer][10]
@@ -33,7 +33,7 @@
                 <[matrix3_float64][B0][ 0.99619 0.0 -0.08717  0.0 1.0 0.0  0.08717 0.0 0.99619 ]>
                 <[vector3_float64][Direction][ -0.99619 0.0 0.08717 ]>
                 <[float64][StepDistance][0.001]>
-                <[string8][InputTransform][PrimerTranslation.Output]>
+                <[string8][InputTransform][PrimerLeverTranslation.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Primer]>
                     <[string8][Qualifiers][step]>
@@ -86,7 +86,7 @@
             <[control_cylinder][FuelSelectorBase][11]
                 <[string8][Type][knob toggle]>
                 <[vector3_float64][R0][ 0.3712 0.336271 -0.4036 ]>
-                <[matrix3_float64][B0][ 0.0 1.0 0.0  0.0 0.0 -1.0  1.0 0.0 0.0 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  0.0 0.0 1.0  1.0 0.0 0.0 ]>
                 <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
                 <[float64][StepAngle][0.5]>
                 <[control_message][OnRotate][]
@@ -383,7 +383,7 @@
             <[control_cylinder][StickCopilotGrip][114]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][ -0.446105 0.0 -0.390604 ]>
-                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  1.0 0.0 0.0 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
                 <[float64][StepDistance][0.00005]>
@@ -405,6 +405,7 @@
             // door
             <[control_input][DoorPosition][]
                 <[uint32][InputID][DoorPosition.Output]>
+                <[float64][Scaling][3.1426]>
             >
             <[control_rotation][DoorTransform][]
                 <[string8][Input][DoorPosition.Output]>
@@ -462,25 +463,25 @@
             <[control_input][PropellerRotationAngle][]
                 <[uint32][InputID][PropellerRotationAngle.Output]>
             >
-            <[control_input][PropellerSpinning][]
-                <[uint32][InputID][PropellerSpinning.Output]>
+            <[control_input][PropellerCannotBeGrabbed][]
+                <[uint32][InputID][PropellerCannotBeGrabbed.Output]>
                 <[float64][Scaling][10000.0]>
             >
             <[control_translation][PropellerShift][]
-                <[string8][Input][PropellerSpinning.Output]>
-                <[tmvector3d][Axis][-1.0 0.0 0.0 ]>
+                <[string8][Input][PropellerCannotBeGrabbed.Output]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
             >
             <[control_rotation][PropellerTransform][]
                 <[string8][Input][PropellerRotationAngle.Output]>
-                <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
-                <[tmvector3d][Pivot][ 1.78904 0.0 -0.311608 ]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Pivot][ 1.90871 -0.00577 -0.30183 ]>
                 <[string8][InputTransform][PropellerShift.Output]>
             >
             <[control_cylinder][PropellerBlade0][20]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 1.7707 0.579616 -0.294458 ]>
-                <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 -1.0 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 -1.0 ]>
                 <[float64][StepDistance][0.001]>
                 <[string8][InputTransform][PropellerTransform.Output]>
                 <[control_message][OnStep][]
@@ -494,7 +495,7 @@
             <[control_cylinder][PropellerBlade1][20]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 1.7707 -0.579616 -0.294458 ]>
-                <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 -1.0 ]>
                 <[vector3_float64][Direction][ 0.0 0.0 -1.0 ]>
                 <[float64][StepDistance][0.001]>
                 <[string8][InputTransform][PropellerTransform.Output]>
