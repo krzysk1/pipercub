@@ -2205,7 +2205,7 @@
             <[graphics_human][Pilot][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][GeometryList][ PilotBody ]>
+                <[string8][GeometryList][ PilotBody PilotHead ]>
                 <[uint32][ShowInside][ CameraCopilot CameraLeftWing CameraRightWing ]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
