@@ -1,0 +1,13 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // trim
+            <[input_default][PitchTrim][95]
+                <[float64][Value][0.0]>
+            >
+
+        >
+    >
+>
+
