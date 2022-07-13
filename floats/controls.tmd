@@ -1,0 +1,45 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+            // water rudder
+            <[control_input][WaterRudderInput][]
+                <[uint32][InputID][WaterRudder.Output]>
+                <[float64][Scaling][0.4753]>
+            >
+            <[control_rotation][WaterRudderRotation][]
+                <[string8][Input][WaterRudderInput.Output]>
+				<[tmvector3d][Axis][0.0 1.0 0.0]>
+				<[tmvector3d][Pivot][0.1767 0.2436 -0.6943 ]>
+            >			
+            <[control_cylinder][WaterRudderLever][21]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][0.2411 0.2435 -0.6953]>
+                <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
+                <[vector3_float64][Direction][-1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[string8][InputTransform][WaterRudderRotation.Output]>				
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.WaterRudderDeploy]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.13]>
+            >
+            <[control_box][WaterRudderLeverBase][14]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 0.2020 0.2539 -0.6821 ]>
+                <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
+                <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.001]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.WaterRudderDeploy]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                <[vector3_float64][Dimensions][ 0.1 0.015 0.003 ]>
+            >
+        >
+    >
+>

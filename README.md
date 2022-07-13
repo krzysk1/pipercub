@@ -4,7 +4,7 @@ The Piper PA-11 Cub Special is a later production, two-place variant of the Pipe
 Original 3D design and original sound files:
 Adrian Fernandez Gomez (please visit www.alcala-sim.com).
 
-Original Aerofly FS 1 aircraft and Aerofly FS 2 adaptation:
+Original Aerofly FS 1 aircraft and Aerofly FS 4 adaptation:
 Krzysztof Kaniewski krzysk (at) wp.pl
 
 Aerofly FS 2 optimizations, flight physics, performance:

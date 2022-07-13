@@ -1,0 +1,242 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmgraphics][DynamicObjects][]
+			// swimmer
+            <[rigidbody][SwimmerBody][]
+                <[float64][Mass][50.0]>
+                <[tmvector3d][InertiaLength][ 5.7912 2.7432 0.40 ]>
+                <[tmvector3d][R0][-0.436 0.0 -1.6751]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
+            <[jointlinear][JointFuselageSwimmer][]
+				<[tmvector3d][R0][ -0.07 0.0 -0.96368 ]>
+				<[float64][Kfx][2000.0]>
+				<[float64][Kfy][2000.0]>
+				<[float64][Kfz][60000.0]>
+				<[float64][Dfx][20.0]>
+				<[float64][Dfy][200.0]>
+				<[float64][Dfz][500.0]>
+				<[float64][Ktx][5000.0]>
+				<[float64][Kty][10000.0]>
+				<[float64][Ktz][50000.0]>
+				<[float64][Dtx][200.6]>
+				<[float64][Dty][2000.6]>
+				<[float64][Dtz][2000.6]>
+				<[string8][Body0][Fuselage]>
+				<[string8][Body1][SwimmerBody]>
+				<[float64][ForceMax][100000.0]>
+				<[float64][TorqueMax][100000.0]>
+			>			
+            <[swimmer][RightSwimmerHull][]
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R][-0.436 -1.3716 -1.496368]>
+                <[float64][K][20000]>
+                <[float64][D][3000]>
+                <[string8][Geometry][Rightfloat]>
+                <[float64][DynamicFriction][1.0]>
+            >			
+            <[swimmer][LeftSwimmerHull][]
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R][-0.436 1.3716 -1.496368]>
+                <[float64][K][20000]>
+                <[float64][D][3000]>
+                <[string8][Geometry][Leftfloat]>
+                <[float64][DynamicFriction][1.0]>
+            >			
+            <[wheel][RightWheelHull][]
+                <[float64][K][98000]>
+                <[float64][D][510]>
+                <[float64][Radius][0.3048]>
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R0][2.4596 -1.3716 -1.506]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[string8][InputBrake][0.1]>
+                <[float64][BrakeStrength][0.1]>									
+            >
+            <[output][GroundRollSpeedRight][]
+                <[string8][Input][RightWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadRight][]
+                <[string8][Input][RightWheelHull.Load]>
+            >			
+            <[wheel][LeftWheelHull][]
+                <[float64][K][98000]>
+                <[float64][D][510]>
+                <[float64][Radius][0.3048]>
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R0][2.4596 1.3716 -1.506]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[string8][InputBrake][0.1]>
+                <[float64][BrakeStrength][0.1]>							
+            >
+            <[output][GroundRollSpeedLeft][]
+                <[string8][Input][LeftWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadLeft][]
+                <[string8][Input][LeftWheelHull.Load]>
+            >			
+            <[wheel][RightTailSwimmerHull][]
+                <[float64][K][98000]>
+                <[float64][D][510]>
+                <[float64][Radius][0.3048]>
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R0][-3.3316 -1.3716 -1.506]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>								
+            >
+            <[wheel][LeftTailSwimmerHull][]
+                <[float64][K][98000]>
+                <[float64][D][510]>
+                <[float64][Radius][0.3048]>
+                <[string8][Body][SwimmerBody]>
+                <[tmvector3d][R0][-3.3316 1.3716 -1.506]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>				
+            >
+            <[aerofuselage][RightSwimmerAero][]
+                <[string8][Body][SwimmerBody]>
+                <[float64][StationX][  2.1752 1.5091 0.9003 0.1050 -3.1827 ]>
+                <[float64][StationY][  -1.2126 -1.2126 -1.2126 -1.2126 -1.2126 ]>
+                <[float64][StationZ][  -1.6166 -1.82 -1.82 -1.78 -1.7119 ]>
+                <[float64][StationWidth][  0.08 0.5312 0.5727 0.5442 0.2527 ]>
+                <[float64][StationHeight][  0.03 0.4494 0.4375 0.4055 0.2029 ]>
+                <[uint32][StationShape][  1 1 1 1 1 ]>
+                <[float64][Cdx][ 0.0750 ]>
+                <[float64][Cdy][ 1.0 ]>
+                <[float64][Cdz][ 1.5 ]>
+                <[float64][Cly][ 1.5 ]>
+                <[float64][Clz][ 1.5 ]>
+                <[float64][Cm][ 1.0 ]>
+            >
+            <[aerofuselage][LeftSwimmerAero][]
+                <[string8][Body][SwimmerBody]>
+                <[float64][StationX][  2.1752 1.5091 0.9003 0.1050 -3.1827 ]>
+                <[float64][StationY][  1.2126 1.2126 1.2126 1.2126 1.2126 ]>
+                <[float64][StationZ][  -1.6166 -1.82 -1.82 -1.78 -1.7119 ]>
+                <[float64][StationWidth][  0.08 0.5312 0.5727 0.5442 0.2527 ]>
+                <[float64][StationHeight][  0.03 0.4494 0.4375 0.4055 0.2029 ]>
+                <[uint32][StationShape][  1 1 1 1 1 ]>
+                <[float64][Cdx][ 0.0750 ]>
+                <[float64][Cdy][ 1.0 ]>
+                <[float64][Cdz][ 1.5 ]>
+                <[float64][Cly][ 1.5 ]>
+                <[float64][Clz][ 1.5 ]>
+                <[float64][Cm][ 1.0 ]>
+            >			
+			// waterrudder
+            <[input_lever][WaterInput][]
+                <[string8][Message][Controls.WaterRudderDeploy]>
+            >			
+            <[servoclassic][WaterRudder][]
+                <[string8][Input][WaterInput.Output]>
+                <[float64][Speed][0.7]>
+                <[float64][P0][0.0]>
+                <[float64][P1][1.0]>		
+                <[float64][P2][0.0]>
+                <[float64][P3][0.0]>
+            >		
+            <[output_free][WaterRudderOutput][]
+                <[string8][Input][WaterRudder.Output]>
+            >			
+        >
+        <[pointer_list_tmgraphics][GraphicObjects][]
+			// swimmers
+			<[rigidbodygraphics][Swimmers][]
+				<[string8][GeometryList][ Rightfloat Leftfloat Floatstruts Floatswires ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>		
+			>
+			<[hingedbodygraphics][WaterRudder][]
+				<[string8][GeometryList][ Waterrudderpivot Waterrudderpart ]> 
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][0.0 0.0 1.0]>
+				<[tmvector3d][Pivot][-3.2062 -1.2374 -1.6048]>
+				<[float64][Scaling][-0.523599]>			
+			>
+			<[hingedbodygraphics][WaterRudderLink][]
+				<[string8][GeometryList][ Mandowr2 ]> 
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][0.0 0.0 1.0]>
+				<[tmvector3d][Pivot][-4.5683 -0.0001 0.7498 ]>
+				<[float64][Scaling][0.523599]>		
+			>		
+			<[hingedbodygraphics][WaterRudderDeploy][]
+				<[string8][GeometryList][ Waterrudder ]> 
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][WaterRudder.Output]>	
+				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Pivot][-3.197 -1.2374 -1.8262 ]>
+				<[float64][Scaling][1.5882]>
+				<[string8][Graphics][WaterRudder]>			
+			>
+			<[hingedbodygraphics][WaterRudderHandle][]
+				<[string8][GeometryList][ Waterruderlever ]> 
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][WaterRudder.Output]>
+				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Pivot][0.1767 0.2436 -0.6943 ]>
+				<[float64][Scaling][0.4753]>			
+			>	
+			<[movinggraphics][WaterRudderLink1][]
+				<[string8][GeometryList][ Soporte116003 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][0.0537 -0.0028 0.0]>	
+				<[float64][Scaling][1.9099]>				
+			>
+			<[movinggraphics][WaterRudderLink2][]
+				<[string8][GeometryList][ Soporte116004 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][-0.0532 -0.0043 0.0]>	
+				<[float64][Scaling][1.9099]>				
+			>
+			<[movinggraphics][WaterRudderLink3][]
+				<[string8][GeometryList][ Soporte14006 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][-0.0235 -0.0031 -0.0056]>		
+				<[float64][Scaling][1.9099]>				
+			>
+			<[movinggraphics][WaterRudderLink4][]
+				<[string8][GeometryList][ Soporte14001 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][0.023 0.0002 0.0054]>	
+				<[float64][Scaling][1.9099]>				
+			>
+			<[movinggraphics][WaterRudderLink5][]
+				<[string8][GeometryList][ Soporte116002 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][0.0368 0.0065 0.0]>	
+				<[float64][Scaling][1.9099]>				
+			>
+			<[movinggraphics][WaterRudderLink6][]
+				<[string8][GeometryList][ Soporte116001 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[uint32][InputID][Rudder.Output]>
+				<[tmvector3d][Axis][-0.0387 -0.0028 0.0]>	
+				<[float64][Scaling][1.9099]>			
+			>
+        >
+    >
+>
+
+
+
+
+
+
+
+

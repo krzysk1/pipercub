@@ -8,6 +8,10 @@
         <[float64][ApproachSpeed][28.3]>
         <[float64][PatternSpeed][46.3]>
         <[float64][InitialClimbSpeed][28.3]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>
+        <[bool][Aerobatic][true]>
         <[bool][TailDragger][true]>
         <[bool][RudderTrimRequired][true]>
         <[float64][ElevatorGain][0.8]>

@@ -447,7 +447,7 @@
 //            <[control_cylinder][WaterRudder][21]
 //                <[string8][Type][lever]>
 //                <[vector3_float64][R0][0.2020 0.2539 -0.6821]>
-//                <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0  ]>
+//                <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
 //                <[vector3_float64][Direction][1.0 0.0 0.0 ]>
 //                <[float64][StepAngle][0.1]>
 //                <[control_message][OnRotate][]
