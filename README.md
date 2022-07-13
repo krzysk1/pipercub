@@ -10,7 +10,7 @@ Krzysztof Kaniewski krzysk (at) wp.pl
 Aerofly FS 2 optimizations, flight physics, performance:
 Jan-Hendrik Hanuschik (IPACS)
 
-Tested on Aerofly FS4 for Windows. Be sure that you have version <b>v4.0.1.11</b> or higher!
+Tested on Aerofly FS4 for Windows. Be sure that you have version <b>4.0.1.11</b> or higher!
 
 Tip:
 To start the engine grab the propeller blade and rotate the propeller. When using a mouse drag down instead of around the spinner for the best result.
