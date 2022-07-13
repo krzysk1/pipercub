@@ -1,6 +1,6 @@
 # pipercub
 
-Tested on Aerofly FS4 on Windows 10. Be sure that you have version <b>v4.0.1.11</b> or higher!
+Tested on Aerofly FS4 for Windows. Be sure that you have version <b>v4.0.1.11</b> or higher!
 
 The Piper PA-11 Cub Special is a later production, two-place variant of the Piper J-3 Cub light propeller-driven aircraft, manufactured by Piper Aircraft. 	
 
