@@ -1717,8 +1717,8 @@
                 <[string8][GeometryList][ Fuelindicator ]>
                 <[uint32][InputID][FuelQuantity.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
-                <[float64][Scaling][0.000114]>
-                <[float64][Offset][-0.000057]>
+                <[float64][Scaling][0.000057]>
+                <[float64][Offset][0.0]>
             >
 
 			// levers

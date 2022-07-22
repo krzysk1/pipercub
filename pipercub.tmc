@@ -15,12 +15,14 @@
         <[float64][MinimumAirspeed]        [17.0]>
         <[float64][ApproachAirspeed]       [24.58]>
         <[float64][CruiseAirspeed]         [33.53]>
+        <[float64][CruiseSpeed]            [50.0]>		
         <[float64][MaximumAirspeed]        [53.0]>
+        <[float64][MaximumSpeed]           [53.0]>		
         <[tmvector2d][NormalAirspeedRange] [ 17.0 39.0 ]>
         <[tmvector2d][CautionAirspeedRange][ 39.0 53.0 ]>
         <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0 ]>
         <[float64][MaximumAltitude][4880.0]>
-        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][515.4]>
         <[float64][EnginePower][48470.0]>
         <[float64][MaximumRange][270000.0]>
