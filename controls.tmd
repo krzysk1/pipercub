@@ -191,7 +191,7 @@
                 <[float64][StepDistance][0.4]>
                 <[string8][InputTransform][MagnetosRotation.Output]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.Magnetos]>
+                    <[string8][Message][Controls.Magnetos1]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
@@ -205,7 +205,7 @@
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepAngle][0.4]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][Controls.Magnetos]>
+                    <[string8][Message][Controls.Magnetos1]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
