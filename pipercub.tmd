@@ -867,6 +867,11 @@
             <[output_free][PitchTrimOutput][]
                 <[string8][Input][PitchTrim.Output]>
             >
+            <[sender][SenderPitchTrimPosition][]
+                <[string8][Input][PitchTrim.Output]>
+                <[string8][Message][Aircraft.PitchTrim]>
+                <[string8][Qualifiers][ normalized ]>
+            >
 
             // aileron
             <[input_control][AileronInput][]
@@ -1774,7 +1779,7 @@
                 <[uint32][InputID][PitchTrim.Output]>
                 <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
                 <[float64][Scaling][0.0435]>
-                <[float64][Offset][0.0435]>				
+                <[float64][Offset][0.0435]>
             >
             <[hingedbodygraphics][Magneto][]
                 <[uint32][PositionID][Fuselage.R]>
