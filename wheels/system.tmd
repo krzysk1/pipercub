@@ -147,7 +147,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ TailGearsupport ]>
                 <[uint32][InputID][Rudder.Output]>
-                <[tmvector3d][Axis][ -0.0 -0.0 -1.0 ]>
+                <[tmvector3d][Axis][ 0.0 0.0 -1.0 ]>
                 <[tmvector3d][Pivot][ -4.57775 0.001 -0.32512 ]>
                 <[float64][Scaling][1.0]>
             >
