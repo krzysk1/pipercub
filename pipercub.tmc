@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ ( 0.3191 0.9753 -1.5524 0.23 ) ( 0.3191 -0.9753 -1.5524 0.23 ) (-4.8054 0.0 -0.4779 0.0831 ) ]>
         <[string8][ICAO][PA11]>
-        <[string8][DisplayName][Piper Cub Special]>
+        <[string8][DisplayName][Piper Cub]>
         <[string8][DisplayNameFull][Piper PA-11 Cub Special]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
