@@ -49,7 +49,6 @@
                 <[float64][Radius][0.3048]>
                 <[string8][Body][SwimmerBody]>
                 <[tmvector3d][R0][2.4596 -1.3716 -1.506]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.1]>
                 <[float64][BrakeStrength][0.1]>									
             >
@@ -65,7 +64,6 @@
                 <[float64][Radius][0.3048]>
                 <[string8][Body][SwimmerBody]>
                 <[tmvector3d][R0][2.4596 1.3716 -1.506]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.1]>
                 <[float64][BrakeStrength][0.1]>							
             >
@@ -80,16 +78,14 @@
                 <[float64][D][510]>
                 <[float64][Radius][0.3048]>
                 <[string8][Body][SwimmerBody]>
-                <[tmvector3d][R0][-3.3316 -1.3716 -1.506]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>								
+                <[tmvector3d][R0][-3.3316 -1.3716 -1.506]>								
             >
             <[wheel][LeftTailSwimmerHull][]
                 <[float64][K][98000]>
                 <[float64][D][510]>
                 <[float64][Radius][0.3048]>
                 <[string8][Body][SwimmerBody]>
-                <[tmvector3d][R0][-3.3316 1.3716 -1.506]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>				
+                <[tmvector3d][R0][-3.3316 1.3716 -1.506]>				
             >
             <[aerofuselage][RightSwimmerAero][]
                 <[string8][Body][SwimmerBody]>

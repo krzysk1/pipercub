@@ -19,12 +19,11 @@
             >
             <[wheel][LeftWheelHull][]
                 <[string8][Body][LeftGear]>
-                <[tmvector3d][R0][ 0.3191 0.9753 -1.5524 ]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][R0][ 0.3191 0.9821 -1.5524 ]>
                 <[float64][K][10000.0]>
                 <[float64][D][510.0]>
                 <[float64][Radius][0.23]>
-                <[float64][Width][0.24]>
+                <[float64][Width][0.26]>
                 <[float64][RimRadius][0.107]>
                 <[float64][Inflation][200000.0]>
                 <[string8][InputBrake][LeftBrakeInput.Output]>
@@ -54,12 +53,11 @@
             >
             <[wheel][RightWheelHull][]
                 <[string8][Body][RightGear]>
-                <[tmvector3d][R0][ 0.3191 -0.9753 -1.5524 ]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][R0][ 0.3191 -0.9643 -1.5524 ]>
                 <[float64][K][10000.0]>
                 <[float64][D][510.0]>
                 <[float64][Radius][0.23]>
-                <[float64][Width][0.24]>
+                <[float64][Width][0.26]>
                 <[float64][RimRadius][0.107]>
                 <[float64][Inflation][200000.0]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
@@ -106,7 +104,6 @@
             <[wheel][TailWheelHull][]
                 <[string8][Body][TailGearLower]>
                 <[tmvector3d][R0][ -4.8054 0.0 -0.4779 ]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[float64][K][23600]>
                 <[float64][D][177]>
                 <[float64][Radius][0.0831]>
@@ -170,7 +167,7 @@
                 <[string8][GeometryList][ TailGearWheel ]>
                 <[float64][Radius][0.0831]>
                 <[float64][RimRadius][0.0454]>
-                <[float64][Pivot][ -4.8054 -0.0381 -0.4779 ]>
+                <[tmvector3f][Pivot][ -4.8054 -0.0381 -0.4779 ]>
                 <[tmvector3f][Axis][ 0.0 1.0 0.0 ]>
             >
             <[graphics_linear_interpolation][obj4Mapping_204][]
@@ -218,13 +215,17 @@
                 <[tmvector3d][Joint1][0.3170 0.7731 -1.5538]>
                 <[uint32][AttachTo][0]>
             >
-            <[rotatingbodygraphics][LeftWheel][]
-                <[uint32][PositionID][LeftGear.R]>
+            <[graphics_wheel][LeftWheel][]
+                <[uint32][PositionID]   [LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
+                <[uint32][AngleID]      [LeftWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [LeftWheelHull.Ground]>
+                <[uint32][DeformationID][LeftWheelHull.Deformation]>
                 <[string8][GeometryList][ LeftWheel ]>
-                <[uint32][AngleID][LeftWheelHull.RotationAngle]>
-                <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
-                <[tmvector3d][Pivot][ 0.3191 0.8802 -1.5524 ]>
+                <[float64][Radius][0.23]>
+                <[float64][RimRadius][0.107]>
+                <[tmvector3d][Pivot][ 0.3191 0.9821 -1.5524 ]>
+                <[tmvector3f][Axis][ 0.0 1.0 0.0 ]>
             >
             <[rigidbodygraphics][RightGear][]
                 <[uint32][PositionID][RightGear.R]>
@@ -247,13 +248,17 @@
                 <[tmvector3d][Joint1][0.3170 -0.7731 -1.5538]>
                 <[uint32][AttachTo][0]>
             >
-            <[rotatingbodygraphics][RightWheel][]
-                <[uint32][PositionID][RightGear.R]>
+            <[graphics_wheel][RightWheel][]
+                <[uint32][PositionID]   [RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
+                <[uint32][AngleID]      [RightWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [RightWheelHull.Ground]>
+                <[uint32][DeformationID][RightWheelHull.Deformation]>
                 <[string8][GeometryList][ RightWheel ]>
-                <[uint32][AngleID][RightWheelHull.RotationAngle]>
-                <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
-                <[tmvector3d][Pivot][ 0.3191 -0.8802 -1.5524 ]>
+                <[float64][Radius][0.23]>
+                <[float64][RimRadius][0.107]>
+                <[tmvector3f][Pivot][ 0.3191 -0.9643 -1.5524 ]>
+                <[tmvector3f][Axis][ 0.0 1.0 0.0 ]>
             >
         >
     >
