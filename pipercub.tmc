@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ ( 0.3191 0.9753 -1.5524 0.23 ) ( 0.3191 -0.9753 -1.5524 0.23 ) (-4.8054 0.0 -0.4779 0.0831 ) ]>
         <[string8][ICAO][PA11]>
-        <[string8][DisplayName][Piper Cub]>
+        <[string8][DisplayName][Piper PA-11 Cub]>
         <[string8][DisplayNameFull][Piper PA-11 Cub Special]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
@@ -15,9 +15,9 @@
         <[float64][MinimumAirspeed]        [17.0]>
         <[float64][ApproachAirspeed]       [24.58]>
         <[float64][CruiseAirspeed]         [33.53]>
-        <[float64][CruiseSpeed]            [50.0]>		
+        <[float64][CruiseSpeed]            [50.0]>
         <[float64][MaximumAirspeed]        [53.0]>
-        <[float64][MaximumSpeed]           [53.0]>		
+        <[float64][MaximumSpeed]           [53.0]>
         <[tmvector2d][NormalAirspeedRange] [ 17.0 39.0 ]>
         <[tmvector2d][CautionAirspeedRange][ 39.0 53.0 ]>
         <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0 ]>
@@ -30,6 +30,6 @@
         <[uint][EngineCount][1]>
         <[uint][Year][1947]>
         <[string8][Tags][ airplane piston general_aviation gear tailgear ]>
-        <[string8][Pilot][pilot_peter]>	
+        <[string8][Pilot][pilot_peter]>
     >
 >
