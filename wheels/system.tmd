@@ -122,14 +122,12 @@
                 <[string8][Geometry][LeftGear]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionRightGear][]
                 <[string8][Body][RightGear]>
                 <[string8][Geometry][RightGear]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
             >						
         >
         <[pointer_list_tmgraphics][GraphicObjects][]

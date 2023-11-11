@@ -38,28 +38,62 @@
                 <[tmvector3d][R0][ 0.043656 0.0 0.2 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cockpit pilot]>
+                <[float64][Kf][80.0]>
+                <[float64][Df][3.00]>
+                <[float64][Kt][0.08]>
+                <[float64][Dt][0.04]>
+                <[string8][Tags][cockpit pilot front]>
             >
-            <[camera_head][CameraCopilot][]
+            <[camera_head][CameraPassenger][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -0.762679 0.0 0.17 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cockpit copilot]>
+                <[float64][Kf][80.0]>
+                <[float64][Df][3.00]>
+                <[float64][Kt][0.08]>
+                <[float64][Dt][0.04]>
+                <[string8][Tags][cockpit copilot rear]>
             >
-            <[camera][CameraLeftWing][]
+            <[camera][CameraCockpitView][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 3.0 8.0 -1.5 ]>
-                <[tmvector3d][Direction][ -0.345 -0.922 0.172 ]>
+                <[tmvector3d][R0][ -1.8 0.0  1.6 ]>
+                <[tmvector3d][Direction][  1.0 0.0 -0.5 ]>
                 <[bool][InCockpit][false]>
-                <[string8][Tags][left wing]>
+                <[string8][Tags][cockpit outside]>
             >
-            <[camera][CameraRightWing][]
+            <[camera][CameraGearView][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -4.5 -7.0 1.0 ]>
-                <[tmvector3d][Direction][ 0.537 0.835 -0.119 ]>
+                <[tmvector3d][R0][ -3.287724 0.792829 -0.23923 ]>
+                <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][gear]>
+            >
+            <[camera][CameraStabilizer][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -3.738213 0.0 1.049429 ]>
+                <[tmvector3d][Direction][ 0.95 0.0 -0.3 ]>
+                <[float64][Cone][-0.1]>
                 <[bool][InCockpit][false]>
-                <[string8][Tags][right wing]>
+                <[string8][Tags][tail stabilizer]>
+            >
+            <[camera][CameraLeftFuselageView][]
+                <[string8][Body][LeftWing]>
+                <[tmvector3d][R0][ 0.0 4.3 0.15 ]>
+                <[tmvector3d][X0][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 -1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][fuselage wing left]>
+            >
+            <[camera][CameraRightFuselageView][]
+                <[string8][Body][RightWing]>
+                <[tmvector3d][R0][ 0.0 -4.3 0.15 ]>
+                <[tmvector3d][X0][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][fuselage wing right]>
             >
 
             // cameras end
@@ -110,49 +144,47 @@
                 <[string8][Geometry][Fuselage]>
                 <[float64][K][1096000]>
                 <[float64][D][10960]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionNacelle][]
                 <[string8][Body][Fuselage]>
                 <[string8][Geometry][Nacelle]>
                 <[float64][K][1096000]>
                 <[float64][D][10960]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[string8][Body][LeftWing]>
                 <[string8][Geometry][LeftWing]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[string8][Body][RightWing]>
                 <[string8][Geometry][RightWing]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionHorizontalStabilizer][]
                 <[string8][Body][HorizontalStabilizer]>
                 <[string8][Geometry][Stabilizer]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftElevator][]
                 <[string8][Body][HorizontalStabilizer]>
                 <[string8][Geometry][LeftElevator]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionRudder][]
                 <[string8][Body][Fuselage]>
                 <[string8][Geometry][Rudder]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-                <[bool][CrashOnContact][false]>
+                <[bool][InstantCrash][true]>
             >
 
             // stabilizer
@@ -1886,13 +1918,13 @@
 //                <[uint32][PositionID][Fuselage.R]>
 //                <[uint32][OrientationID][Fuselage.Q]>
 //                <[string8][GeometryList][ Pilotbody Pilothead ]>
-//                <[uint32][ShowInside][ CameraPilot CameraCopilot CameraLeftWing CameraRightWing ]>
+//                <[uint32][ShowInside][ CameraPassenger CameraLeftFuselageView CameraRightFuselageView ]>
 //            >
 //            <[rigidbodygraphics][PassengerBody][]
 //                <[uint32][PositionID][Fuselage.R]>
 //                <[uint32][OrientationID][Fuselage.Q]>
 //                <[string8][GeometryList][ Passengerbody Passengerhead ]>
-//                <[uint32][ShowInside][ CameraPilot CameraCopilot CameraLeftWing CameraRightWing ]>
+//                <[uint32][ShowInside][ CameraPassenger CameraLeftFuselageView CameraRightFuselageView ]>
 //            >
 
             <[graphics_linear_interpolation][FootTransformMapping][]
@@ -1952,7 +1984,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ PilotBody PilotHead ]>
-                <[uint32][ShowInside][ CameraCopilot CameraLeftWing CameraRightWing ]>
+                <[uint32][ShowInside][ CameraPassenger CameraLeftFuselageView CameraRightFuselageView ]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
                      <[string8][Name][Bip01]>
@@ -4065,6 +4097,7 @@
                 <[string8][InputVolume][RPMVolume.Output]>
                 <[string8][InputPitch][RPMPitch.Output]>
                 <[string8][SoundFile][engn1.wav]>
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>				
             >
             <[soundmapping][RPMHighPitch][]
                 <[string8][Input][RotationSpeed.Output]>
@@ -4081,6 +4114,7 @@
                 <[string8][InputPitch][RPMHighPitch.Output]>
                 <[string8][SoundFile][int2200rpm.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>			
             >
             <[soundloop][RPMVolumeHighLoopExternal][]
                 <[uint32][PositionID][Fuselage.R]>
@@ -4089,6 +4123,7 @@
                 <[string8][InputPitch][RPMHighPitch.Output]>
                 <[string8][SoundFile][ext2200rpm.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>		
             >
 //            <[soundmapping][RPMPitch1000][]
 //                <[string8][Input][RotationSpeed.Output]>
@@ -4247,6 +4282,7 @@
                 <[float64][Threshold][0.5]>
                 <[uint32][Direction][1]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>				
             >
             <[soundsingle][EngineStartExt][]
                 <[uint32][PositionID][Fuselage.R]>
@@ -4257,6 +4293,7 @@
                 <[float64][Threshold][0.5]>
                 <[uint32][Direction][1]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>				
             >
         >
     >
