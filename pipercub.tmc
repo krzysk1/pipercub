@@ -1,15 +1,19 @@
 ﻿<[file][][]
     <[object][][]
         <[int][Version][220]>
-        <[vec32array][ContactSpheres][ ( 0.3191 0.9753 -1.5524 0.23 ) ( 0.3191 -0.9753 -1.5524 0.23 ) (-4.8054 0.0 -0.4779 0.0831 ) ]>
+        <[vec32array][ContactSpheres][ ( 0.319 0.975 -1.552 0.23 ) ( 0.319 -0.975 -1.552 0.23 ) (-4.805 0.0 -0.478 0.083 ) ]>
         <[string8][ICAO][PA11]>
         <[string8][DisplayName][Piper PA-11 Cub]>
         <[string8][DisplayNameFull][Piper PA-11 Cub Special]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
-                <[string8][Text][The Piper PA-11 Cub Special is a later production, two-place variant of the Piper J-3 Cub light propeller-driven aircraft, manufactured by Piper Aircraft. This particular model is powered by a 65hp engine and does not have an electrical system, which means you will need to hand crank the propeller. Aerofly FS 4 aircraft made by Jan-Hendrik Hanuschik (IPACS team member) and Krzysztof Kaniewski. 3D model by Adrian Fernandez Gomez.]>
+                <[string8][Text][The Piper PA-11 Cub Special is a later production, two-place variant of the Piper J-3 Cub light propeller-driven aircraft, manufactured by Piper Aircraft. This particular model is powered by a 65hp engine and does not have an electrical system, which means you will need to hand crank the propeller. Aerofly FS4 aircraft made by Jan-Hendrik Hanuschik (IPACS team member) and Krzysztof Kaniewski. 3D model by Adrian Fernandez Gomez.]>
 			>
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Piper PA-11 Cub Special ist eine spätere Produktion, eine zweisitzige Variante des leichten Propellerflugzeugs Piper J-3 Cub, hergestellt von Piper Aircraft. Dieses spezielle Modell wird von einem 65-PS-Motor angetrieben und verfügt nicht über ein elektrisches System, was bedeutet, dass Sie den Propeller von Hand drehen müssen. Das Flugzeug für Aerofly FS4 wurde von Jan-Hendrik Hanuschik (IPACS-Teammitglied) und Krzysztof Kaniewski hergestellt. Das 3D-Modell stammt von Adrian Fernandez Gomez.]>
+			>			
         >
         <[float64][WingSpan][10.9]>
         <[float64][MinimumAirspeed]        [17.0]>
