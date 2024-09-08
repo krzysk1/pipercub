@@ -9,16 +9,16 @@
             >
             <[control_rotation][WaterRudderRotation][]
                 <[string8][Input][WaterRudderInput.Output]>
-				<[tmvector3d][Axis][0.0 1.0 0.0]>
-				<[tmvector3d][Pivot][0.1767 0.2436 -0.6943 ]>
-            >			
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][0.1767 0.2436 -0.6943 ]>
+            >
             <[control_cylinder][WaterRudderLever][21]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.2411 0.2435 -0.6953]>
                 <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
                 <[vector3_float64][Direction][-1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.1]>
-                <[string8][InputTransform][WaterRudderRotation.Output]>				
+                <[string8][InputTransform][WaterRudderRotation.Output]>
                 <[control_message][OnRotate][]
                     <[string8][Message][Controls.WaterRudderDeploy]>
                     <[string8][Qualifiers][step]>

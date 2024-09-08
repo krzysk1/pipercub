@@ -116,7 +116,7 @@
             >
             <[output][GroundRollLoadTail][]
                 <[string8][Input][TailWheelHull.Load]>
-            >			
+            >
             <[collisionhull][CollisionLeftGear][]
                 <[string8][Body][LeftGear]>
                 <[string8][Geometry][LeftGear]>
@@ -128,7 +128,7 @@
                 <[string8][Geometry][RightGear]>
                 <[float64][K][200000]>
                 <[float64][D][3000]>
-            >						
+            >
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
             // gear
