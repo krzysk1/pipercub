@@ -1,19 +1,23 @@
 ﻿<[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ ( 0.319 0.975 -1.552 0.23 ) ( 0.319 -0.975 -1.552 0.23 ) (-4.805 0.0 -0.478 0.083 ) ]>
-        <[string8][ICAO][PA11]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ ( 0.319 0.975 -1.552 0.23 ) ( 0.319 -0.975 -1.552 0.23 ) (-4.805 0.0 -0.478 0.083 ) ]>
+        <[stringt8c][ICAO][PA11]>
         <[string8][DisplayName][Piper PA-11 Cub]>
         <[string8][DisplayNameFull][Piper PA-11 Cub Special]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
-                <[string8][Language][en]>
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
+                <[string8u][Language][en]>
                 <[string8][Text][The Piper PA-11 Cub Special is a later production, two-place variant of the Piper J-3 Cub light propeller-driven aircraft, manufactured by Piper Aircraft. This particular model is powered by a 65hp engine and does not have an electrical system, which means you will need to hand crank the propeller. Aerofly FS4 aircraft made by Jan-Hendrik Hanuschik (IPACS team member) and Krzysztof Kaniewski. 3D model by Adrian Fernandez Gomez.]>
 			>
-            <[localized_text][][]
-                <[string8][Language][de]>
+            <[localized_text][element][1]
+                <[string8u][Language][de]>
                 <[string8][Text][Die Piper PA-11 Cub Special ist eine spätere Produktion, eine zweisitzige Variante des leichten Propellerflugzeugs Piper J-3 Cub, hergestellt von Piper Aircraft. Dieses spezielle Modell wird von einem 65-PS-Motor angetrieben und verfügt nicht über ein elektrisches System, was bedeutet, dass Sie den Propeller von Hand drehen müssen. Das Flugzeug für Aerofly FS4 wurde von Jan-Hendrik Hanuschik (IPACS-Teammitglied) und Krzysztof Kaniewski hergestellt. Das 3D-Modell stammt von Adrian Fernandez Gomez.]>
-			>			
+			>
+            <[localized_text][element][2]
+                <[string8u][Language][pl]>
+                <[string8][Text][Piper PA-11 Cub Special to późniejszy, dwumiejscowy wariant lekkiego samolotu Piper J-3 Cub z napędem śmigłowym, produkowany przez Piper Aircraft. Ten konkretny model jest napędzany silnikiem o mocy 65 KM i nie ma układu elektrycznego, co oznacza, że trzeba ręcznie kręcić śmigłem. Samolot Aerofly FS4 wykonany przez Jana-Hendrika Hanuschika (członka zespołu IPACS) i Krzysztofa Kaniewskiego. Model 3D autorstwa Adriana Fernandeza Gomeza.]>
+			>
         >
         <[float64][WingSpan][10.9]>
         <[float64][MinimumAirspeed]        [17.0]>
@@ -30,9 +34,9 @@
         <[float64][MaximumTakeoffMass][515.4]>
         <[float64][EnginePower][48470.0]>
         <[float64][MaximumRange][270000.0]>
-        <[uint][UnitsBuilt][1541]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][1947]>
+        <[uint32][UnitsBuilt][1541]>
+        <[uint32][EngineCount][1]>
+        <[uint32][Year][1947]>
         <[string8][Tags][ airplane piston general_aviation gear tailgear ]>
         <[string8][Pilot][pilot_peter]>
     >
