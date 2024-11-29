@@ -536,7 +536,10 @@
                 <[float64][InputTemperature] [EngineHousing.Output]>
                 <[float64][AddHeat]          [EngineHousing.AddHeat]>
                 <[float64][RotationInertia][0.7]>
-                <[float64][ThrottleIdle][0.24]>
+				// 800 RPM setting: <[float64][ThrottleIdle][0.24]>
+				// 500 RPM setting: <[float64][ThrottleIdle][0.175]>
+				// 250 RPM setting: <[float64][ThrottleIdle][0.12]>
+                <[float64][ThrottleIdle][0.175]>
                 <[float64][Friction][180.0]>
                 <[float64][RatedRotationSpeed][240.85]>
                 <[float64][RatedPower][48470.0]>
