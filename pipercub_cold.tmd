@@ -6,8 +6,15 @@
             <[input_default][PitchTrim][95]
                 <[float64][Value][0.0]>
             >
-
+            <[multibody_joint][PropellerJoint][]
+                <[float64][Velocity][0.0]>
+            >
+            <[input_discrete][Magnetos][]
+                <[float64][Value][0.0]>
+            >
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.0]>
+            >
         >
     >
 >
-
