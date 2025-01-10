@@ -34,6 +34,7 @@
         <[float64][MaximumAltitude]   [4880.0]>
         <[float64][CruiseAltitude]    [1826.0]>
         <[float64][MaximumRange]      [270000.0]>
+		<[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 17.0 39.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 39.0 53.0 ]>
         <[string8][Tags][ airplane piston general_aviation gear tailgear ]>
