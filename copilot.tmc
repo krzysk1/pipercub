@@ -5,8 +5,8 @@
         <[float64][DefaultGrossMass][455.1]>
         <[float64][WingSpan][10.7]>
         <[float64][WingArea][16.58]>
-        <[float64][LEMAC][0.401775]>
-        <[float64][MAC][1.611205]>
+        <[float64][LEMAC][0.4017]>
+        <[float64][MAC][1.6112]>
         <[float64][HeightOffset][-1.55]>
         <[float64][ApproachSpeed][28.3]>
         <[float64][PatternSpeed][46.3]>

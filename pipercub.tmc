@@ -49,7 +49,7 @@
         <[uint32] [UnitsBuilt]           [1541]>
         <[uint32] [EngineCount]          [1]>
         <[float64][EnginePower]          [48470.0]>
-        <[float64][MinimumAirspeed]      [17.5]> // Stall speed: 40 mph (65 km/h, 35 kn)
+        <[float64][MinimumAirspeed]      [17.5]>
         <[float64][ApproachAirspeed]     [24.6]>
         <[float64][CruiseAirspeed]       [33.5]> // Cruise speed: 100 mph (162 km/h, 87 kn) // 75 MPH
         <[float64][CruiseSpeed]          [50.0]>
@@ -64,8 +64,8 @@
         <[float64][TakeoffDistance]      [112.8]>
         <[float64][LandingDistance]      [88.4]>
         <[float64][FuelDensity]          [780.0]>
-        <[float64][MACLeadingEdge]       [0.401775]>
-        <[float64][MACLength]            [1.611205]>
+        <[float64][MACLeadingEdge]       [0.4017]>
+        <[float64][MACLength]            [1.6112]>
         <[float64][MACOptimumCG]         [0.27]>
         <[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 17.5 39.0 ]>

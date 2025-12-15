@@ -2,15 +2,15 @@
 
     //-------------------------------------
     //
-    // Piper PA-11 Cub Special
+    // Piper PA-11 Cub Special for Aerofly FS 4
     //
     // Original 3D design and original sound files:
     //   Alcala Simulacion
     //
-    // Original Aerofly FS 1 aircraft and Aerofly FS 2 adaptation:
+    // Original Aerofly FS 1, FS 2 and Aerofly FS 4 adaptation:
     //   Krzysztof Kaniewski krzysk (at) wp.pl
     //
-    // Aerofly FS 2 optimizations, flight physics, performance:
+    // Aerofly FS optimizations, flight physics, performance:
     //   Jan-Hendrik Hanuschik (IPACS)
     //
     //-------------------------------------
@@ -511,7 +511,7 @@
             >
             <[engine2][Engine][]
                 <[string8][InputThrottle]    [ThrottleLever.Output]>
-                <[string8][InputMixture]     [FuelSelector.Output]>
+                <[string8][InputMixture]     [ActualMixture.Output]>
                 <[string8][InputLeftMagneto] [LeftMagneto.Output]>
                 <[string8][InputRightMagneto][RightMagneto.Output]>
                 <[string8][RotationSpeed]    [DriveShaft.RotationSpeed]>
@@ -723,7 +723,6 @@
             <[output][FuelQuantity][]
                 <[uint32][Input][FuelTank.Output]>
             >
-
             // fuel selector
             <[input_switch][FuelSelectorInput][]
                 <[string8][Message][Controls.FuelSelector]>
@@ -743,8 +742,13 @@
             <[output_free][FuelSelectorOutput][]
                 <[string8][Input][FuelSelector.Output]>
             >
-
-            // fuel level
+            // fuel level (deprecated)
+            <[fuel_deprecated_tank][FuelTank0][]
+                <[float64][MassFull][35.1]>
+                <[float64][FillLevel][0.8]>
+                <[string8][InputPressure][TankFuelLine.Output]>
+                <[string8][AddFlow][TankFuelLine.AddFlow]>
+            >
             <[fuel_deprecated_line][TankFuelLine][]
                 <[float64][Pressure][101325.0]>
             >
@@ -1737,7 +1741,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ Fuelindicator ]>
                 <[uint32][InputID][FuelQuantity.Output]>
-                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Axis][ 0.0 -0.02849 0.0 ]>
                 <[float64][Scaling][0.000057]>
                 <[float64][Offset][0.0]>
             >
