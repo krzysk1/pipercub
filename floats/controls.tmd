@@ -12,7 +12,7 @@
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][0.1767 0.2436 -0.6943 ]>
             >
-            <[control_cylinder][WaterRudderLever][21]
+            <[control_cylinder][WaterRudderLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.2411 0.2435 -0.6953]>
                 <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
@@ -27,7 +27,7 @@
                 <[float64][Radius][0.004]>
                 <[float64][Length][0.13]>
             >
-            <[control_box][WaterRudderLeverBase][14]
+            <[control_box][WaterRudderLeverBase][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.2020 0.2539 -0.6821 ]>
                 <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>

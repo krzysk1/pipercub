@@ -1,6 +1,6 @@
 ﻿<[file][][]
     <[modelinformation][][]
-        <[int32][Version][220]>
+        <[int32][Version][230]>
         <[list_vector4_float64][ContactSpheres][ ( 0.319 0.975 -1.552 0.23 ) ( 0.319 -0.975 -1.552 0.23 ) (-4.805 0.0 -0.478 0.083 ) ]>
         <[stringt8c][ICAO][PA11]>
         <[string8][DisplayName][Piper PA-11 Cub]>
@@ -17,37 +17,58 @@
             <[localized_text][element][2]
                 <[string8u][Language][fr]>
                 <[string8][Text][Le Piper PA-11 Cub Special est une variante biplace de dernière génération de l'avion léger à hélices Piper J-3 Cub, fabriqué par Piper Aircraft. Ce modèle particulier est équipé d'un moteur de 65 ch et ne dispose pas de système électrique, ce qui signifie que vous devrez démarrer l'hélice à la main. Avion Aerofly FS4 créé par Jan-Hendrik Hanuschik (membre de l'équipe IPACS) et Krzysztof Kaniewski. Modèle 3D par Adrian Fernandez Gomez.]>
-			>
+            >
             <[localized_text][element][3]
                 <[string8u][Language][es]>
                 <[string8][Text][El Piper PA-11 Cub Special es una variante posterior de dos plazas del avión ligero Piper J-3 Cub propulsado por hélice, fabricado por Piper Aircraft. Este modelo en particular está propulsado por un motor de 65 CV y no tiene sistema eléctrico, lo que significa que tendrás que accionar la hélice manualmente. Avión Aerofly FS4 fabricado por Jan-Hendrik Hanuschik (miembro del equipo IPACS) y Krzysztof Kaniewski. Modelo 3D de Adrian Fernández Gómez.]>
-			>
+            >
             <[localized_text][element][4]
                 <[string8u][Language][it]>
                 <[string8][Text][Il Piper PA-11 Cub Special è una variante biposto di ultima generazione del velivolo leggero a elica Piper J-3 Cub, prodotto dalla Piper Aircraft. Questo particolare modello è alimentato da un motore da 65 CV e non dispone di un impianto elettrico, il che significa che sarà necessario avviare l'elica manualmente. Aereo Aerofly FS4 realizzato da Jan-Hendrik Hanuschik (membro del team IPACS) e Krzysztof Kaniewski. Modello 3D di Adrian Fernandez Gomez.]>
-			>
+            >
             <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Piper PA-11 Cub Special to późniejszy, dwumiejscowy wariant lekkiego samolotu Piper J-3 Cub z napędem śmigłowym, produkowany przez Piper Aircraft. Ten konkretny model jest napędzany silnikiem o mocy 65 KM i nie ma układu elektrycznego, co oznacza, że trzeba ręcznie kręcić śmigłem. Samolot Aerofly FS4 wykonany przez Jana-Hendrika Hanuschika (członka zespołu IPACS) i Krzysztofa Kaniewskiego. Model 3D autorstwa Adriana Fernandeza Gomeza.]>
             >
         >
-        <[float64][MaximumTakeoffMass][515.4]>
-        <[float64][WingSpan]          [10.9]>
-        <[uint32] [Year]              [1947]>
-        <[uint32] [UnitsBuilt]        [1541]>
-        <[uint32] [EngineCount]       [1]>
-        <[float64][EnginePower]       [48470.0]>
-        <[float64][MinimumAirspeed]   [17.0]>
-        <[float64][ApproachAirspeed]  [24.6]>
-        <[float64][CruiseAirspeed]    [33.5]>
-        <[float64][CruiseSpeed]       [50.0]>
-        <[float64][MaximumAirspeed]   [53.0]>
-        <[float64][MaximumSpeed]      [53.0]>
-        <[float64][MaximumAltitude]   [4880.0]>
-        <[float64][CruiseAltitude]    [1826.0]>
-        <[float64][MaximumRange]      [270000.0]>
+        <[float64][MaximumTaxiMass]      [553.0]>
+        <[float64][MaximumTakeoffMass]   [553.0]>
+        <[float64][MaximumLandingMass]   [553.0]>
+        <[float64][MaximumZeroFuelMass]  [517.9]>
+        <[float64][OperatingEmptyMass]   [340.0]>
+        <[float64][MaximumFuelMass]      [35.1]>
+        <[float64][MaximumPayload]       [177.9]>
+        <[uint32] [MaximumPersonsOnBoard][2]>
+        <[float64][WingSpan]             [10.7]>
+        <[float64][WingArea]             [16.58]>
+        <[float64][Length]               [6.8]>
+        <[float64][Height]               [2.03]>
+        <[float64][NoseWheelPosition]    [0.319]>
+        <[float64][MainGearWidth]        [1.95]>
+        <[uint32] [Year]                 [1947]>
+        <[uint32] [UnitsBuilt]           [1541]>
+        <[uint32] [EngineCount]          [1]>
+        <[float64][EnginePower]          [48470.0]>
+        <[float64][MinimumAirspeed]      [17.5]> // Stall speed: 40 mph (65 km/h, 35 kn)
+        <[float64][ApproachAirspeed]     [24.6]>
+        <[float64][CruiseAirspeed]       [33.5]> // Cruise speed: 100 mph (162 km/h, 87 kn) // 75 MPH
+        <[float64][CruiseSpeed]          [50.0]>
+        <[float64][MaximumAirspeed]      [53.0]>
+        <[float64][MaximumSpeed]         [53.0]>  // Maximum speed: 112 mph (181 km/h, 97 kn) // VNE 122 MPH
+        <[float64][MaximumAltitude]      [4880.0]>
+        <[float64][CruiseAltitude]       [1826.0]>
+        <[float64][MaximumRange]         [567000.0]>
+        <[float64][MaximumLoadRange]     [567000.0]>
+        <[float64][MaximumFuelRange]     [567000.0]>
+        <[float64][MaximumFerryRange]    [567000.0]>
+        <[float64][TakeoffDistance]      [112.8]>
+        <[float64][LandingDistance]      [88.4]>
+        <[float64][FuelDensity]          [780.0]>
+        <[float64][MACLeadingEdge]       [0.401775]>
+        <[float64][MACLength]            [1.611205]>
+        <[float64][MACOptimumCG]         [0.27]>
         <[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
-        <[vector2_float64][NormalAirspeedRange] [ 17.0 39.0 ]>
+        <[vector2_float64][NormalAirspeedRange] [ 17.5 39.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 39.0 53.0 ]>
         <[string8][Tags][ airplane piston general_aviation gear tailgear ]>
         <[string8][Pilot][pilot_peter]>
