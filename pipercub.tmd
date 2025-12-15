@@ -511,7 +511,7 @@
             >
             <[engine2][Engine][]
                 <[string8][InputThrottle]    [ThrottleLever.Output]>
-                <[string8][InputMixture]     [ActualMixture.Output]>
+                <[string8][InputMixture]     [FuelSelector.Output]>
                 <[string8][InputLeftMagneto] [LeftMagneto.Output]>
                 <[string8][InputRightMagneto][RightMagneto.Output]>
                 <[string8][RotationSpeed]    [DriveShaft.RotationSpeed]>
